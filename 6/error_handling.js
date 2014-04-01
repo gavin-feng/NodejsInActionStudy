@@ -21,5 +21,5 @@ function errorHandler() {
 
 connect()
   .use(badMiddleware)
-  .use(errorHandler)
+  .use(errorHandler())
   .listen(3000);
